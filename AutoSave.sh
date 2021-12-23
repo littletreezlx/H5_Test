@@ -10,5 +10,5 @@ project_path=$(cd `dirname $0`; pwd)
 cd $project_path
 git add .
 git commit -m "Mac_AutoSave"
-git pull --rebase origin master
-git push origin master
+git pull --rebase
+git push
