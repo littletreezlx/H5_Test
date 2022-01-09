@@ -14,7 +14,7 @@ printf "\n\n\n"
 cd $project_path
 git add .
 git commit -m "Mac_AutoSave"
-git pull --rebase
+git pull --rebase origin master
 git push
 printf "\n\n\n"
 printf "执行完毕---%s\n" $project_name
