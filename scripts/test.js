@@ -3,9 +3,9 @@ let myGreeting = setTimeout(function sayHi() {
   console.log('Hello, Mr. Universe!');
 }, 2000);
 
-// With a function defined separately
-// function sayHi() {
-//   alert('Hello Mr. Universe!');
-// };
 
-// let myGreeting = setTimeout(sayHi, 2000);
+
+let json = {name: 'AAA'}
+console.log(json);
+let newJson = {...json, name: 'BBB'}
+console.log(newJson);

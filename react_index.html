@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
 
     <title>HTML debugging examples</title>
 
@@ -11,25 +11,24 @@
   </head>
 
   <body>
-    <h1>HTML 调试示例</h1>
+    <div id="react_container"></div>
 
-    <div class="word">Overflow</div>
+    <!-- 加载 React。-->
+    <!-- 注意: 部署时，将 "development.js" 替换为 "production.min.js"。-->
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-    <!-- ... 其它 HTML ... -->
+    <!-- 加载我们的 React 组件。-->
+    <!-- <script src="like_button.js"></script> -->
+    <script src="App.js"></script>
 
-<div id="like_button_container"></div>
-
-<!-- ... 其它 HTML ... -->
-
-  <!-- 加载 React。-->
-  <!-- 注意: 部署时，将 "development.js" 替换为 "production.min.js"。-->
-  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-
-  <!-- 加载我们的 React 组件。-->
-  <script src="like_button.js"></script>
-  
-  <script type="text/babel"></script>
+    <script type="text/babel"></script>
   </body>
 </html>
