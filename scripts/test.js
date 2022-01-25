@@ -1,11 +1,4 @@
-// With a named function
-let myGreeting = setTimeout(function sayHi() {
-  console.log('Hello, Mr. Universe!');
-}, 2000);
 
-
-
-let json = {name: 'AAA'}
+let json = {sss: ''}
+console.log(Object.keys(json));
 console.log(json);
-let newJson = {...json, name: 'BBB'}
-console.log(newJson);
